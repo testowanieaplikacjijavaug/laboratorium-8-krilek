@@ -30,7 +30,7 @@ class VerifyVsAssertTest {
     @Test
     public void withVerify() {
         // We want to test Value2 method.
-        ISampleClass mock = mock(ISampleClass.class);
+        ISampleClass mock = mock(MockType.NICE, ISampleClass.class);
         expect(mock.Value2()).andReturn(3);
         expect(mock.Value3()).andReturn(3);
         replay(mock);
